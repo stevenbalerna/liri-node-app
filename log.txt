@@ -473,3 +473,18 @@ Language: English, Russian, Hindi
 Plot: Nick Fury is the director of S.H.I.E.L.D., an international peace-keeping agency. The agency is a who's who of Marvel Super Heroes, with Iron Man, The Incredible Hulk, Thor, Captain America, Hawkeye and Black Widow. When global security is threatened by Loki and his cohorts, Nick Fury and his team will need all their powers to save the world from disaster.
 Actors: Robert Downey Jr., Chris Evans, Mark Ruffalo, Chris Hemsworth
 
+LIRI Response:
+
+------------------------
+Movie Information:
+------------------------
+
+Movie Title: The Avengers
+Year Released: 04 May 2012
+IMBD Rating: 8.1
+Rotten Tomatoes Rating: undefined
+Country Produced: USA
+Language: English, Russian, Hindi
+Plot: Nick Fury is the director of S.H.I.E.L.D., an international peace-keeping agency. The agency is a who's who of Marvel Super Heroes, with Iron Man, The Incredible Hulk, Thor, Captain America, Hawkeye and Black Widow. When global security is threatened by Loki and his cohorts, Nick Fury and his team will need all their powers to save the world from disaster.
+Actors: Robert Downey Jr., Chris Evans, Mark Ruffalo, Chris Hemsworth
+

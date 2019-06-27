@@ -144,6 +144,9 @@ function getMovie(movie) {
             case "movie-this":
                 getMovie(insideString);
                 break;
+                case "do-this":
+                dothisapi(insideString);
+                break;
             default:
                 console.log("command not known");
         }
