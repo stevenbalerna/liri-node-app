@@ -158,5 +158,4 @@ function getMovie(movie) {
 
 
 
-     // runCommand(process.argv[2], process.argv.slice(3).join(" "))}
        runCommand(process.argv[2], process.argv[3]);
