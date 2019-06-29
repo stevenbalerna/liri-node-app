@@ -2,24 +2,44 @@ require("dotenv").config();
 
 var Spotify = require('node-spotify-api');
 
-var keys = require('./keys');
+var keys = require('./keys.js');
 
 // Include file system module
 var fs = require("fs");
-
+var liriArgv = process.argv;
 var spotify = new Spotify(keys.spotify);
 var axios = require("axios");
 var moment = require("moment");
 
 var request = require('request');
 
+
+//Multiple words
+var title = "";
+for (var i = 3; i < liriArgv.length; i++) {
+    if (i > 3 && i < liriArgv.length) {
+        title = title + " " + liriArgv[i];
+    } else {
+        title = title + liriArgv[i];
+    }
+};
+
+
 function concertapi(artist) {
     var concertURL = "https://rest.bandsintown.com/artists/" + artist + "/events?app_id=codingbootcamp";
     // Make a request for a user with a given ID
     axios.get(concertURL)
         .then(function (response) {
-            // handle success
-            console.log(response.data);
+            // console.log(response.data);
+            //console.log 
+            
+        
+            // string containing the concert data to print to the console    
+            console.log('Name of Venue: ' + response.data[i].venue.name), 
+            console.log('Location of Venue: ' + response.data[i].venue.city);
+            // creating var for concert date
+            var concertDate = response.data[i];
+            console.log('Date of Event: ' + moment(concertDate).format('L'));
         })
 }
 // concertapi("Ariana Grande")
@@ -54,10 +74,6 @@ var spotifyapi = function (songName) {
 }
 
 function getMovie(movie) {
-    // Append the command to the log.txt file
-    fs.appendFile('./log.txt,', 'User Command: node liri.js movie-this ' + movie + '\n\n', (err) => {
-        if (err) throw err;
-    });
 
     var movieSearch;
     if (movie === '') {
@@ -65,55 +81,38 @@ function getMovie(movie) {
     } else {
         movieSearch = movie;
     }
-    // Construct the query string
+    
     var omdbapi = 'http://www.omdbapi.com/?t=' + movieSearch + '&y=&plot=full&apikey=70dba95e';
 
-    // Send the request to OMDB
-    request(omdbapi, function (error, response, body) {
-        if (error || (response.statusCode !== 200)) {
-            var errorStr1 = 'ERROR: Retrieving OMDB entry -- ' + error;
-
-            // Append the error string to the log.txt file
-            fs.appendFile('./log.txt', errorStr1, (err) => {
-                if (err) throw err;
-                console.log(errorStr1);
-            });
-            return;
-        } else {
-            var data = JSON.parse(body);
-            if (!data.Title && !data.Released && !data.imdbRating) {
-                var errorStr2 = 'ERROR: No movie info retrieved!';
-
-                // Append the error string to the log.txt file
-                fs.appendFile('./log.txt', errorStr2, (err) => {
-                    if (err) throw err;
-                    console.log(errorStr2);
-                });
-                return;
-            } else {
-                // Pretty print the movie information
-                var outputStr = '------------------------\n' +
-                    'Movie Information:\n' +
-                    '------------------------\n\n' +
-                    'Movie Title: ' + data.Title + '\n' +
-                    'Year Released: ' + data.Released + '\n' +
-                    'IMBD Rating: ' + data.imdbRating + '\n' +
-                    'Rotten Tomatoes Rating: ' + data.tomatoRating + '\n' +
-                    'Country Produced: ' + data.Country + '\n' +
-                    'Language: ' + data.Language + '\n' +
-                    'Plot: ' + data.Plot + '\n' +
-                    'Actors: ' + data.Actors + '\n';
-
-
-                // Append the output to the log.txt file
-                fs.appendFile('./log.txt', 'LIRI Response:\n\n' + outputStr + '\n', (err) => {
-                    if (err) throw err;
-                    console.log(outputStr);
-                });
+    axios.get(omdbapi)
+        .then(function (response){
+            //general header
+            console.log('Movie Information')
+            // just a line
+            console.log('------------------------------')
+            // print movie title
+            console.log('Movie Title: ' + response.data.Title);
+            // print year released
+            console.log('Year Released: ' + response.data.Year);
+            // print IMDB Rating
+            console.log('IMDB Rating: ' + response.data.imdbRating);
+            // print Rotten Tomatoes Rating
+            console.log('Rotten Tomatoes Rating: ' + response.data.tomatoRating);
+            // print Country it was produced in
+            console.log('Country Produced: ' + response.data.Country);
+            // print language
+            console.log('Language: ' + response.data.Language);
+            // print plot
+            console.log('Plot: ' + response.data.Plot);
+            // print actors and actresses
+            console.log('Actors: ' + response.data.Actors);
+        })
+   
+               
             }
-        }
-    });
-}
+        
+    
+
 
     function doThis() {
         // Use built-in readfile method to access random.txt

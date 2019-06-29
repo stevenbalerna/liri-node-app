@@ -18,3 +18,13 @@ User Command: node liri.js movie-this avengers
 
 User Command: node liri.js movie-this avengers
 
+User Command: node liri.js movie-this Avengers Endgame
+
+User Command: node liri.js movie-this Avengers
+
+User Command: node liri.js movie-this Space Jam
+
+User Command: node liri.js movie-this Space Jam
+
+User Command: node liri.js movie-this Space Jam 2
+

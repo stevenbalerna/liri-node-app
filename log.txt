@@ -488,3 +488,108 @@ Language: English, Russian, Hindi
 Plot: Nick Fury is the director of S.H.I.E.L.D., an international peace-keeping agency. The agency is a who's who of Marvel Super Heroes, with Iron Man, The Incredible Hulk, Thor, Captain America, Hawkeye and Black Widow. When global security is threatened by Loki and his cohorts, Nick Fury and his team will need all their powers to save the world from disaster.
 Actors: Robert Downey Jr., Chris Evans, Mark Ruffalo, Chris Hemsworth
 
+LIRI Response:
+
+------------------------
+Movie Information:
+------------------------
+
+Movie Title: Avengers: Endgame
+Year Released: 26 Apr 2019
+IMBD Rating: 8.7
+Rotten Tomatoes Rating: undefined
+Country Produced: USA
+Language: English, Japanese, Xhosa
+Plot: After the devastating events of Avengers: Infinity War (2018), the universe is in ruins. With the help of remaining allies, the Avengers assemble once more in order to undo Thanos' actions and restore order to the universe.
+Actors: Robert Downey Jr., Chris Evans, Mark Ruffalo, Chris Hemsworth
+
+LIRI Response:
+
+------------------------
+Movie Information:
+------------------------
+
+Movie Title: The Avengers
+Year Released: 04 May 2012
+IMBD Rating: 8.1
+Rotten Tomatoes Rating: undefined
+Country Produced: USA
+Language: English, Russian, Hindi
+Plot: Nick Fury is the director of S.H.I.E.L.D., an international peace-keeping agency. The agency is a who's who of Marvel Super Heroes, with Iron Man, The Incredible Hulk, Thor, Captain America, Hawkeye and Black Widow. When global security is threatened by Loki and his cohorts, Nick Fury and his team will need all their powers to save the world from disaster.
+Actors: Robert Downey Jr., Chris Evans, Mark Ruffalo, Chris Hemsworth
+
+LIRI Response:
+
+------------------------
+Movie Information:
+------------------------
+
+Movie Title: Space Jam
+Year Released: 15 Nov 1996
+IMBD Rating: 6.4
+Rotten Tomatoes Rating: undefined
+Country Produced: USA
+Language: English
+Plot: Swackhammer, owner of the amusement park planet Moron Mountain is desperate get new attractions and he decides that the Looney Tune characters would be perfect. He sends his diminutive underlings to get them to him, whether Bugs Bunny & Co. want to go or not. Well armed for their size, Bugs Bunny is forced to trick them into agreeing to a competition to determine their freedom. Taking advantage of their puny and stubby legged foes, the gang selects basketball for the surest chance of winning. However, the Nerdlucks turn the tables and steal the talents of leading professional basketball stars to become massive basketball bruisers known as the Monstars. In desperation, Bugs Bunny calls on the aid of Micheal Jordan, the Babe Ruth of Basketball, to help them have a chance at winning their freedom.
+Actors: Michael Jordan, Wayne Knight, Theresa Randle, Manner Washington
+
+LIRI Response:
+
+------------------------
+Movie Information:
+------------------------
+
+Movie Title: Space Jam
+Year Released: 15 Nov 1996
+IMBD Rating: 6.4
+Rotten Tomatoes Rating: undefined
+Country Produced: USA
+Language: English
+Plot: Swackhammer, owner of the amusement park planet Moron Mountain is desperate get new attractions and he decides that the Looney Tune characters would be perfect. He sends his diminutive underlings to get them to him, whether Bugs Bunny & Co. want to go or not. Well armed for their size, Bugs Bunny is forced to trick them into agreeing to a competition to determine their freedom. Taking advantage of their puny and stubby legged foes, the gang selects basketball for the surest chance of winning. However, the Nerdlucks turn the tables and steal the talents of leading professional basketball stars to become massive basketball bruisers known as the Monstars. In desperation, Bugs Bunny calls on the aid of Micheal Jordan, the Babe Ruth of Basketball, to help them have a chance at winning their freedom.
+Actors: Michael Jordan, Wayne Knight, Theresa Randle, Manner Washington
+
+LIRI Response:
+
+------------------------
+Movie Information:
+------------------------
+
+Movie Title: Space Jam
+Year Released: 15 Nov 1996
+IMBD Rating: 6.4
+Rotten Tomatoes Rating: undefined
+Country Produced: USA
+Language: English
+Plot: Swackhammer, owner of the amusement park planet Moron Mountain is desperate get new attractions and he decides that the Looney Tune characters would be perfect. He sends his diminutive underlings to get them to him, whether Bugs Bunny & Co. want to go or not. Well armed for their size, Bugs Bunny is forced to trick them into agreeing to a competition to determine their freedom. Taking advantage of their puny and stubby legged foes, the gang selects basketball for the surest chance of winning. However, the Nerdlucks turn the tables and steal the talents of leading professional basketball stars to become massive basketball bruisers known as the Monstars. In desperation, Bugs Bunny calls on the aid of Micheal Jordan, the Babe Ruth of Basketball, to help them have a chance at winning their freedom.
+Actors: Michael Jordan, Wayne Knight, Theresa Randle, Manner Washington
+
+LIRI Response:
+
+------------------------
+Movie Information:
+------------------------
+
+Movie Title: Space Jam 2
+Year Released: 16 Jul 2021
+IMBD Rating: N/A
+Rotten Tomatoes Rating: undefined
+Country Produced: USA
+Language: English
+Plot: NBA superstar LeBron James teams up with Bugs Bunny and the rest of the Looney Tunes for this long-awaited sequel.
+Actors: LeBron James, Jared Sullinger, Derrick Gilbert
+
+LIRI Response:
+
+------------------------
+Movie Information:
+------------------------
+
+Movie Title: Iron Man
+Year Released: 02 May 2008
+IMBD Rating: 7.9
+Rotten Tomatoes Rating: undefined
+Country Produced: USA
+Language: English, Persian, Urdu, Arabic, Hungarian
+Plot: Tony Stark. Genius, billionaire, playboy, philanthropist. Son of legendary inventor and weapons contractor Howard Stark. When Tony Stark is assigned to give a weapons presentation to an Iraqi unit led by Lt. Col. James Rhodes, he's given a ride on enemy lines. That ride ends badly when Stark's Humvee that he's riding in is attacked by enemy combatants. He survives - barely - with a chest full of shrapnel and a car battery attached to his heart. In order to survive he comes up with a way to miniaturize the battery and figures out that the battery can power something else. Thus Iron Man is born. He uses the primitive device to escape from the cave in Iraq. Once back home, he then begins work on perfecting the Iron Man suit. But the man who was put in charge of Stark Industries has plans of his own to take over Tony's technology for other matters.
+Actors: Robert Downey Jr., Terrence Howard, Jeff Bridges, Gwyneth Paltrow
+
