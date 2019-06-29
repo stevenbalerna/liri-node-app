@@ -1,6 +1,0 @@
-User Command: node liri.js movie-this Godfather
-
-User Command: node liri.js movie-this Godfather
-
-User Command: node liri.js movie-this undefined
-
