@@ -4,18 +4,14 @@ var Spotify = require('node-spotify-api');
 
 var keys = require('./keys.js');
 
-// Include file system module
+// include file system module
 var fs = require("fs");
 var liriArgv = process.argv;
 var spotify = new Spotify(keys.spotify);
 var axios = require("axios");
 var moment = require("moment");
 
-var request = require('request');
-
-
-
-//Multiple words
+// multiple words var/for loop
 var title = "";
 for (var i = 3; i < liriArgv.length; i++) {
     if (i > 3 && i < liriArgv.length) {
@@ -25,6 +21,7 @@ for (var i = 3; i < liriArgv.length; i++) {
     }
 };
 
+// concert-this command api section
 
 function concertapi(artist) {
     var concertURL = "https://rest.bandsintown.com/artists/" + artist + "/events?app_id=codingbootcamp";
@@ -32,22 +29,23 @@ function concertapi(artist) {
     axios.get(concertURL)
         .then(function (response) {
             // console.log(response.data);
-            //console.log 
-
-
-            // string containing the concert data to print to the console    
+           
+            // print name of venue    
             console.log('Name of Venue: ' + response.data[i].venue.name),
-                console.log('Location of Venue: ' + response.data[i].venue.city);
+            // print city of concert
+            console.log('Location of Venue: ' + response.data[i].venue.city);
             // creating var for concert date
             var concertDate = response.data[i];
+            //print date of concert
             console.log('Date of Event: ' + moment(concertDate).format('L'));
         })
 }
-// concertapi("Ariana Grande")
 
 var getArtistNames = function (artist) {
     return artist.name;
 }
+
+// spotify-this section
 
 var spotifyapi = function (songName) {
     spotify.search({
@@ -74,6 +72,8 @@ var spotifyapi = function (songName) {
     });
 }
 
+// get-movie section
+
 function getMovie(movie) {
 
     var movieSearch;
@@ -87,7 +87,9 @@ function getMovie(movie) {
 
     axios.get(omdbapi)
         .then(function (response) {
-
+            fs.appendFile('./log.txt', 'User Command: node liri.js movie-this ' + movie + '\n\n', (err) => {
+                if (err) throw err;
+            });
             //general header
             console.log('Movie Information')
             // just a line
@@ -109,27 +111,21 @@ function getMovie(movie) {
             // print actors and actresses
             console.log('Actors: ' + response.data.Actors);
         })
-
-
 }
 
-
-
-
 function readFile() {
-    // Use built-in readfile method to access random.txt
+    // use built-in readfile method to access random.txt
     fs.readFile("random.txt", "utf8", function (error, data) {
         if (error) {
             return console.log(error);
         }
         console.log(data);
-        //Catch data and use .split to seperate objects in array
+        // catch data and use .split to seperate objects in array
         var dataArr = data.split(",");
-
-        // Take Objects from random.txt to pass as parameters
+        // take objects from random.txt to pass as parameters
         userRequest = dataArr[0];
         userQuery = dataArr[1];
-        // Call the function within new parameters
+        // call the function within new parameters
         userInput(userRequest, userQuery);
     });
 }
@@ -155,7 +151,7 @@ function userInput(liriResponse, insideString) {
 }
 
 var runCommand = function (argOne, argTwo) {
-   userInput(argOne, argTwo);
-    };
+    userInput(argOne, argTwo);
+};
 
 runCommand(process.argv[2], process.argv[3]);
