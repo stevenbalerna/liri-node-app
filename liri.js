@@ -87,6 +87,7 @@ function getMovie(movie) {
 
     axios.get(omdbapi)
         .then(function (response) {
+
             //general header
             console.log('Movie Information')
             // just a line
