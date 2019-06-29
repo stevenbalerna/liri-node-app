@@ -14,6 +14,7 @@ var moment = require("moment");
 var request = require('request');
 
 
+
 //Multiple words
 var title = "";
 for (var i = 3; i < liriArgv.length; i++) {
@@ -32,11 +33,11 @@ function concertapi(artist) {
         .then(function (response) {
             // console.log(response.data);
             //console.log 
-            
-        
+
+
             // string containing the concert data to print to the console    
-            console.log('Name of Venue: ' + response.data[i].venue.name), 
-            console.log('Location of Venue: ' + response.data[i].venue.city);
+            console.log('Name of Venue: ' + response.data[i].venue.name),
+                console.log('Location of Venue: ' + response.data[i].venue.city);
             // creating var for concert date
             var concertDate = response.data[i];
             console.log('Date of Event: ' + moment(concertDate).format('L'));
@@ -81,11 +82,11 @@ function getMovie(movie) {
     } else {
         movieSearch = movie;
     }
-    
+
     var omdbapi = 'http://www.omdbapi.com/?t=' + movieSearch + '&y=&plot=full&apikey=70dba95e';
 
     axios.get(omdbapi)
-        .then(function (response){
+        .then(function (response) {
             //general header
             console.log('Movie Information')
             // just a line
@@ -107,54 +108,53 @@ function getMovie(movie) {
             // print actors and actresses
             console.log('Actors: ' + response.data.Actors);
         })
-   
-               
-            }
-        
-    
 
 
-    function doThis() {
-        // Use built-in readfile method to access random.txt
-        fs.readFile("random.txt", "utf8", function (error, data) {
-            if (error) {
-                return console.log(error);
-            }
-            //Catch data and use .split to seperate objects in array
-            let dataArr = data.split(",");
-
-            // Take Objects from random.txt to pass as parameters
-            userInput = dataArr[0];
-            userQuery = dataArr[1];
-            // Call the function within new parameters
-            userCommand(userInput, userQuery);
-        });
-    }
+}
 
 
-    function userInput(liriResponse, insideString) {
-        switch (liriResponse) {
-            case "concert-this":
-                concertapi(insideString);
-                break;
-            case "spotify-this-song":
-                spotifyapi(insideString);
-                break;
-            case "movie-this":
-                getMovie(insideString);
-                break;
-                case "do-this":
-                dothisapi(insideString);
-                break;
-            default:
-                console.log("command not known");
+
+
+function readFile() {
+    // Use built-in readfile method to access random.txt
+    fs.readFile("random.txt", "utf8", function (error, data) {
+        if (error) {
+            return console.log(error);
         }
-    }
+        console.log(data);
+        //Catch data and use .split to seperate objects in array
+        var dataArr = data.split(",");
 
-    var runCommand = function (argOne, argTwo) {
-        userInput(argOne, argTwo);
+        // Take Objects from random.txt to pass as parameters
+        userRequest = dataArr[0];
+        userQuery = dataArr[1];
+        // Call the function within new parameters
+        userInput(userRequest, userQuery);
+    });
+}
+
+
+function userInput(liriResponse, insideString) {
+    switch (liriResponse) {
+        case "concert-this":
+            concertapi(insideString);
+            break;
+        case "spotify-this-song":
+            spotifyapi(insideString);
+            break;
+        case "movie-this":
+            getMovie(insideString);
+            break;
+        case "do-what-it-says":
+            readFile();
+            break;
+        default:
+            console.log("command not known");
+    }
+}
+
+var runCommand = function (argOne, argTwo) {
+   userInput(argOne, argTwo);
     };
 
-
-
-       runCommand(process.argv[2], process.argv[3]);
+runCommand(process.argv[2], process.argv[3]);
